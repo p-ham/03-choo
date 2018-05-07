@@ -4,6 +4,7 @@
   "description": "train management app in choo.js@3.3.0",
   "main": "index.js",
   "scripts": {
+    "start": "budo index.js -p 8080 --open --live -- -t es2020 -t sheetify",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -12,5 +13,15 @@
     "choo"
   ],
   "author": "philipp hamerle (phamerle.mmt-b2016@fh-salzburg.ac.at)",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^4.1.1",
+    "choo": "^3.3.0",
+    "node-emoji": "^1.8.1",
+    "sheetify": "^7.3.2"
+  },
+  "devDependencies": {
+    "budo": "^11.2.0",
+    "es2020": "^1.1.9"
+  }
 }

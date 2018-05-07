@@ -1,0 +1,16 @@
+{
+  "name": "03-choo",
+  "version": "1.0.0",
+  "description": "train management app in choo.js@3.3.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "train",
+    "management",
+    "choo"
+  ],
+  "author": "philipp hamerle (phamerle.mmt-b2016@fh-salzburg.ac.at)",
+  "license": "MIT"
+}

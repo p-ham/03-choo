@@ -9,8 +9,7 @@ css('bootstrap');
 const styles = css`
 h1 {
     color: blue;
-}
-`;
+}`;
 
 const wagon = 'railway_car';
 const train = 'steam_locomotive';
@@ -40,7 +39,7 @@ reducers: {
             state.wagons.pop()
             add.push(wagon)
         }
-        if (((data.track == 'A' && gleis.length < 5) || 
+        if (((data.track == 'A' && gleis.length < 5) ||
             (data.track == 'B' && gleis.length < 6)) &&
             gleis.length > 0) {
                 state.wagons.pop();
@@ -112,7 +111,7 @@ const mainView = (state, prev, send) => {
             send('moveWagon', {track: 'B'})} class="btn btn-danger">Add to B</button>
             <select onchange=${(el) => {
                 send('changeSelected', {track: el.target.value})}
-            } id="selectTrack">   
+            } id="selectTrack">
                 <option ${state.selected == 'A' ? 'selected' : ''} value="A">Track A</option>
                 <option ${state.selected == 'B' ? 'selected' : ''} value="B">Track B</option>
             </select>

@@ -20,7 +20,7 @@ state: {
     wagons: [wagon, wagon, wagon, wagon, wagon, wagon, wagon, wagon, wagon, wagon],
     trackA: [],
     trackB: [],
-    selected: false
+    selected: false,
 },
 reducers: {
     addWagon: (data, state) => {
